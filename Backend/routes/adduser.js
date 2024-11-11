@@ -43,8 +43,8 @@ router.post(
 
       return res.status(201).json({ success: "Signin Successful" });
     } catch (error) {
-      console.error(error.message);
-      return res.status(500).json({ error: error });
+      console.error(error);
+      return res.status(500).json({ error: error.message });
     }
   }
 );
