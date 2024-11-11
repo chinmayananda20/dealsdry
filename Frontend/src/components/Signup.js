@@ -61,7 +61,7 @@ export default function Signup() {
         });
       }
     } catch (error) {
-      toast.error("Error!", {
+      toast.error(error, {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
