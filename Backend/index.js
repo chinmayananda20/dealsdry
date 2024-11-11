@@ -7,7 +7,10 @@ const app = express();
 const port = process.env.PORT || 5000; 
 const path = require("path");
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-
+const cors = require('cors');
+app.use(cors({
+    origin:'https://dealsdry.vercel.app/'   // Replace with your frontend URL
+}));
 app.use(express.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'build')));
