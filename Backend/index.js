@@ -9,7 +9,7 @@ const path = require("path");
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const cors = require('cors');
 app.use(cors({
-    origin:'https://dealsdry-1.onrender.com/'   // Replace with your frontend URL
+    origin:'*'   // Replace with your frontend URL
 }));
 app.use(express.json());
 app.use(cors());
