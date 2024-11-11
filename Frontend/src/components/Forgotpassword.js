@@ -31,7 +31,7 @@ export default function Forgotpassword() {
     setotp(random);
     const data = { email, otp: random };
     setloader(true);
-    let response = await fetch("http://localhost:5000/api/forgotpassword", {
+    let response = await fetch("https://dealsdry-d2x7.onrender.com/api/forgotpassword", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -104,7 +104,7 @@ export default function Forgotpassword() {
   };
   const updatePassword = async () => {
     const data = { email, password: newpassword };
-    let response = await fetch("http://localhost:5000/api/resetpassword", {
+    let response = await fetch("https://dealsdry-d2x7.onrender.com/api/resetpassword", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

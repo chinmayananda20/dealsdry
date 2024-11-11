@@ -92,7 +92,7 @@ const CreateEmployee = () => {
     formData.append("file", file);
 
     try {
-      let response = await fetch("http://localhost:5000/api/addEmployee", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/addEmployee", {
         method: "POST",
         body: formData,
       });

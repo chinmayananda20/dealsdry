@@ -69,7 +69,7 @@ const EmployeeList = () => {
       setEmployees((prevEmployees) =>
         prevEmployees.filter((employee) => employee._id !== id)
       );
-      let response = await fetch("http://localhost:5000/api/deleteEmployee", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/deleteEmployee", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -125,7 +125,7 @@ const EmployeeList = () => {
 
   const fetchEmployees = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/getEmployees", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/getEmployees", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

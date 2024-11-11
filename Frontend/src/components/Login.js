@@ -23,7 +23,7 @@ export default function Login() {
     setloader(true);
     try {
       const data = { name, password };
-      let response = await fetch("http://localhost:5000/api/login", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

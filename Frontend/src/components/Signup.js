@@ -27,7 +27,7 @@ export default function Signup() {
     setloader(true);
     try {
       const data = { name, email, password };
-      let response = await fetch("http://localhost:5000/api/signup", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

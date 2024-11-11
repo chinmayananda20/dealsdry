@@ -41,7 +41,7 @@ const EmployeeEdit = () => {
     setLoading(true); // Set loading to true when fetching data
     const data = { _id };
     try {
-      let response = await fetch("http://localhost:5000/api/fetchEmployee", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/fetchEmployee", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -143,7 +143,7 @@ const EmployeeEdit = () => {
     formData.append("file", file);
   
     try {
-      let response = await fetch("http://localhost:5000/api/updateEmployee", {
+      let response = await fetch("https://dealsdry-d2x7.onrender.com/api/updateEmployee", {
         method: "POST",
         body: formData, // Don't set Content-Type header manually
       });
