@@ -260,7 +260,7 @@ const EmployeeList = () => {
                 className="w-full p-3 flex justify-center border border-gray-300"
               >
                 <img
-                  src={`http://localhost:5000/uploads/${emp.f_Image}`}
+                  src={`https://dealsdry-d2x7.onrender.com/uploads/${emp.f_Image}`}
                   alt="Employee"
                   className="w-10 h-10 object-cover rounded-full"
                 />
@@ -360,7 +360,7 @@ const EmployeeList = () => {
                 style={{ gridRowStart: 2, gridColumnStart: 2 }}
               >
                 <img
-                  src={`http://localhost:5000/uploads/${employee.f_Image}`}
+                  src={`https://dealsdry-d2x7.onrender.com/uploads/${employee.f_Image}`}
                   alt="Employee"
                   className="w-16 h-16  object-cover rounded-full"
                 />
