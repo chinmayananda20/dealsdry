@@ -354,7 +354,7 @@ const EmployeeEdit = () => {
             ) : 
             employee && employee.f_Image ? (
               <img
-                src={`http://localhost:5000/uploads/${employee.f_Image}`}
+                src={`https://dealsdry-d2x7.onrender.com/uploads/${employee.f_Image}`}
                 alt="Employee"
                 className="w-10 h-10 object-cover rounded-full mx-5"
               />
