@@ -66,7 +66,7 @@ const EmployeeList = () => {
   };
   const removeEmployeeById = async (id) => {
     try {
-      setFilteredEmployees‎((prevEmployees) =>
+      setFilteredEmployees((prevEmployees) =>
         prevEmployees.filter((employee) => employee._id !== id)
       );
       let response = await fetch("https://dealsdry-d2x7.onrender.com/api/deleteEmployee", {
