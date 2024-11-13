@@ -9,7 +9,7 @@ const path = require("path");
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const cors = require('cors');
 app.use(cors({
-    origin:'https://dealsdry-77.vercel.app'   
+    origin:'*'   
 }));
 app.use(express.json());
 app.use(cors());
